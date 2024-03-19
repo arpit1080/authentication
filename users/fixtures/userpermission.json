@@ -1,0 +1,38 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "first_name": "supperadmin",
+    "last_name": "superadmin",
+    "user_name": "superadmin",
+    "email": "arpitrathod1080@gmail.com",
+    "password": "pbkdf2_sha256$720000$BkW3eJICQSdEXsYrIVDY6B$eypt6R/n9RNPtQtlwMZcqxBcJ5evcc1fvrcbkbjZ1mY=",
+    "role_id": 1
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "first_name": "om",
+    "last_name": "patel",
+    "user_name": "ompatel",
+    "email": "ompatel1080@gmail.com",
+    "password": "pbkdf2_sha256$720000$CC1VQPcsvHAQ77TL5kXY1I$NXIh3/r/TM6DvrmBD1GhuMGBcGLnQ19Bb6XLKUkUGgw=",
+    "role_id": 4
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "first_name": "admin",
+    "last_name": "admin",
+    "user_name": "admin",
+    "email": "ompatel100@gmail.com",
+    "password": "pbkdf2_sha256$720000$t7rGQKeAagYMtpZf7ie1wI$dNqoWoA28ZK0f1sLsXqtIxL1/xgz7vNiUFLL2PHY1xg=",
+    "role_id": 4
+  }
+}
+]

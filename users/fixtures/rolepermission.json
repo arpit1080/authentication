@@ -1,0 +1,18 @@
+[
+{
+  "model": "users.rolepermission",
+  "pk": 1,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 1
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 2,
+  "fields": {
+    "role_id": 4,
+    "permission_id": 1
+  }
+}
+]

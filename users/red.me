@@ -1,0 +1,18 @@
+python manage.py dumpdata users.role --indent 2 --output users/fixtures/role.json 
+python manage.py dumpdata users.permission --indent 2 --output users/fixtures/permission.json 
+python manage.py dumpdata users.rolepermission --indent 2 --output users/fixtures/rolepermission.json
+python manage.py dumpdata users.user --indent 2 --output users/fixtures/user.json
+python manage.py dumpdata users.user --indent 2 --output users/fixtures/userpermission.json
+
+python manage.py loaddata role 
+python manage.py loaddata permission
+python manage.py loaddata rolepermission
+python manage.py loaddata user
+python manage.py loaddata userpermission
+
+
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+

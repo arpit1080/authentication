@@ -1,0 +1,37 @@
+[
+{
+  "model": "users.role",
+  "pk": 1,
+  "fields": {
+    "role_name": "superadmin"
+  }
+},
+{
+  "model": "users.role",
+  "pk": 2,
+  "fields": {
+    "role_name": "admin"
+  }
+},
+{
+  "model": "users.role",
+  "pk": 3,
+  "fields": {
+    "role_name": "qwner"
+  }
+},
+{
+  "model": "users.role",
+  "pk": 4,
+  "fields": {
+    "role_name": "customer"
+  }
+},
+{
+  "model": "users.role",
+  "pk": 8,
+  "fields": {
+    "role_name": "stackcd1"
+  }
+}
+]
