@@ -1,42 +1,28 @@
+import jwt
 from django.http import JsonResponse
-from .models import User, role, permission, userPermission
-from django.views.decorators.csrf import csrf_exempt
-from functools import wraps
-from django.shortcuts import get_object_or_404
+from django.http import HttpRequest  # Import HttpRequest
+from django.conf import settings
 
+def verify_token_middleware(get_response):
+    def middleware(request):
+        # Ensure request is an instance of HttpRequest
+        if not isinstance(request, HttpRequest):
+            return JsonResponse({'message': 'Invalid request'}, status=400)
 
-@csrf_exempt
-def is_authorized(permission_name):
-    def decorator(view_func):
-        @wraps(view_func)
-        def wrapped_view(request, *args, **kwargs):
-            print("Request user:", request)
-            print("is_authorized called with request:", request)
-            if not request.user.is_authenticated:
-                print("Request user:", request.user.id)
-                return JsonResponse({"error": "Authentication required."}, status=401)
+        token = request.headers.get('auth-token')
+        if not token:
+            return JsonResponse({'message': 'No token provided'}, status=403)
 
-            try:
-                user = get_object_or_404(User, id=request.user.id)
-                user_roles = user.roles.all()
-                role_permissions = permission.objects.filter(role__in=user_roles, permission_name=permission_name)
+        try:
+            
+            data = jwt.decode(token, settings.SECRET_KEY, algorithms=['HS256'])
+            request.user_id = data.get('user')
+            print(request.user_id)
+            return get_response(request)
+        except jwt.ExpiredSignatureError:
+            return JsonResponse({'message': 'Token has expired'}, status=401)
+        except jwt.InvalidTokenError:
+            return JsonResponse({'message': 'Failed to authenticate token'}, status=401)
 
-                if role_permissions.exists():
-                    user_permission = userPermission.objects.filter(user=user, permission__permission_name=permission_name)
-                    if user_permission.exists():
-                        print("User ID:", user.id)
-                        print("User has permission for", permission_name)
-                        return view_func(request, *args, **kwargs)
-                    else:
-                        return JsonResponse({"error": f"Access forbidden. You do not have permission to access {permission_name}."}, status=403)
-                else:
-                    return JsonResponse({"error": f"Access forbidden. No role has permission for {permission_name}."}, status=403)
-            except User.DoesNotExist:
-                return JsonResponse({"error": "User not found."}, status=404)
-            except permission.DoesNotExist:
-                return JsonResponse({"error": f"No permission named {permission_name}."}, status=404)
-            except Exception as e:
-                print("Error:", e)
-                return JsonResponse({"error": "Internal server error."}, status=500)
-        return wrapped_view
-    return decorator
+    return middleware
+

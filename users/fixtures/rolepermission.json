@@ -14,5 +14,197 @@
     "role_id": 4,
     "permission_id": 1
   }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 3,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 2
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 4,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 3
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 5,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 4
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 6,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 5
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 7,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 6
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 8,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 7
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 9,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 8
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 10,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 9
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 11,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 10
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 12,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 11
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 13,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 12
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 14,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 13
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 15,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 14
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 16,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 15
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 17,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 16
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 18,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 17
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 19,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 18
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 20,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 19
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 21,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 20
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 22,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 21
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 23,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 22
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 24,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 23
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 25,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 24
+  }
+},
+{
+  "model": "users.rolepermission",
+  "pk": 26,
+  "fields": {
+    "role_id": 1,
+    "permission_id": 25
+  }
 }
 ]

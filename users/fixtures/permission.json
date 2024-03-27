@@ -142,5 +142,61 @@
     "permission_name": "get-all-role-permission",
     "description": "you have a get all role permission rights"
   }
+},
+{
+  "model": "users.permission",
+  "pk": 19,
+  "fields": {
+    "permission_name": "create-role-permission",
+    "description": "you have a create role permission rights"
+  }
+},
+{
+  "model": "users.permission",
+  "pk": 20,
+  "fields": {
+    "permission_name": "create-permission",
+    "description": "you have a create permission rights"
+  }
+},
+{
+  "model": "users.permission",
+  "pk": 21,
+  "fields": {
+    "permission_name": "create-user-permission",
+    "description": "you have a create user permission rights"
+  }
+},
+{
+  "model": "users.permission",
+  "pk": 22,
+  "fields": {
+    "permission_name": "get-user-permission",
+    "description": "you have a get user permission rights"
+  }
+},
+{
+  "model": "users.permission",
+  "pk": 23,
+  "fields": {
+    "permission_name": "get-all-user-permission",
+    "description": "you have a get all user permission rights"
+  }
+},
+{
+  "model": "users.permission",
+  "pk": 24,
+  "fields": {
+    "permission_name": "delete-user-permission",
+    "description": "you have a get all user permission rights"
+  }
+},
+{
+  "model": "users.permission",
+  "pk": 25,
+  "fields": {
+    "permission_name": "update-user-permission",
+    "description": "you have a update user permission rights"
+  }
 }
 ]

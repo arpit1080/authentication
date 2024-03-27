@@ -33,5 +33,12 @@
   "fields": {
     "role_name": "stackcd1"
   }
+},
+{
+  "model": "users.role",
+  "pk": 9,
+  "fields": {
+    "role_name": "stackcd2"
+  }
 }
 ]

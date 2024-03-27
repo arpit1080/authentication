@@ -34,5 +34,53 @@
     "password": "pbkdf2_sha256$720000$t7rGQKeAagYMtpZf7ie1wI$dNqoWoA28ZK0f1sLsXqtIxL1/xgz7vNiUFLL2PHY1xg=",
     "role_id": 4
   }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "first_name": "prachi1",
+    "last_name": "prach1i",
+    "user_name": "prachi1",
+    "email": "prachi1@gmail.com",
+    "password": "pbkdf2_sha256$720000$CR2UtihT6T0rNDGrXDUa6l$f7EMOFTjWUJoCT6NE0sMpT4yQtQk2y1sTyEMOm7kcT8=",
+    "role_id": 4
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+    "first_name": "ruchi",
+    "last_name": "ruchi",
+    "user_name": "ruchi1",
+    "email": "ruchi1@gmail.com",
+    "password": "pbkdf2_sha256$720000$G4Dr3GWMYswrcqF2DXLzt8$LqweBGKm3ADQkNGj6ueCISmn/Km4hLN8qQ1aEDdptMU=",
+    "role_id": 4
+  }
+},
+{
+  "model": "users.user",
+  "pk": 7,
+  "fields": {
+    "first_name": "hardik",
+    "last_name": "hardik",
+    "user_name": "hardik1",
+    "email": "hardik1@gmail.com",
+    "password": "pbkdf2_sha256$720000$4bjL5sF8ApoP9GcBiEfpzr$0vlc+68C20Pp8FqqPfu2jDQ/Go7veEgWTc0sDrd4gbA=",
+    "role_id": 4
+  }
+},
+{
+  "model": "users.user",
+  "pk": 8,
+  "fields": {
+    "first_name": "uttam",
+    "last_name": "uttam",
+    "user_name": "uttam1",
+    "email": "uttam1@gmail.com",
+    "password": "pbkdf2_sha256$720000$B3TMMtrjGOwmL39GNN19Rk$lCaxu0VO9x4O4PaufM51MjBOKanbTWYibOmepkV3JaM=",
+    "role_id": 4
+  }
 }
 ]
